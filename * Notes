@@ -1,0 +1,14 @@
+WSL
+#####
+
+To remove WSL:::
+Get-AppxPackage | ? { $_.Name -like "KaliLinux" } | Remove-AppxPackage 
+
+Update WSL:::
+wsl --update
+
+To Check Installed WSL:::
+wsl --list --all
+
+To Install WSL pkg:::
+wsl --install <pkg_name>
